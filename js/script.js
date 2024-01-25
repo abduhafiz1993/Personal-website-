@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.querySelector("form").onclick = function () {
+    document.querySelector("form").onsubmit = function () {
         const name = document.querySelector("#FullName").value;
         const email = document.querySelector("#email").value;
         const mobile = document.querySelector("#mobile").value;
