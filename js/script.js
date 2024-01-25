@@ -15,18 +15,16 @@ document.addEventListener("DOMContentLoaded", function(){
         const mobile = document.querySelector("#mobile").value;
         const subject = document.querySelector("#subject").value;
         const message = document.querySelector("#message").value;
-        const body =  `${subject} ${message}`
+        const body =  `name: ${name} <br/> email: ${email} subject: ${subject} message:${message}`
 
 
 
         Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
+            SecureToken :'fb7af5d7-fe00-4dae-8517-ceda467ddb31',
             To : 'muhammedabdulhafiz1993gmail.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
+            From : email,
+            Subject : subject,
+            Body : body
         }).then(
           message => alert(message)
         );
