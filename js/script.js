@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-        Email.send({
+        Email.send(
+            {
             SecureToken :'fb7af5d7-fe00-4dae-8517-ceda467ddb31',
             To : 'muhammedabdulhafiz1993gmail.com',
             From : email,
