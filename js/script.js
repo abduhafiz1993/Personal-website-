@@ -8,34 +8,6 @@ menuIcon.onclick = () => {
 };
 
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.querySelector("#btn").addEventListener("click", function (e) {
-        e.preventDefault();
-        const name = document.querySelector("#FullName").value;
-        const email = document.querySelector("#email").value;
-        const mobile = document.querySelector("#mobile").value;
-        const subject = document.querySelector("#subject").value;
-        const message = document.querySelector("#message").value;
-        const body =  `name: ${name} <br/> email: ${email} subject: ${subject} message:${message} <br/> <br/>mobile: ${mobile}`
-
-        Email.send(
-            {
-            Host : "stmp.gmail.com",
-            Username : "muhammedabdulhafizwork@gmail.com",
-            Password : "vzlp kjnb opfc qjey",
-            To : 'muhammedabdulhafizwork@gmail.com',
-            From : email,
-            Subject : subject,
-            Body : body
-        }).then(
-          message => alert(message)
-        );
-    }
-    )
-
-
-})
-
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section');
